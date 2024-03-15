@@ -53,6 +53,26 @@ body {
     background-color: #fff;
 }
 
+#header .desktop ul .nav-links {
+    position: relative;
+}
+
+#header .desktop ul .nav-links::after {
+    position: absolute;
+    content: "";
+    height: 0.3rem;
+    width: 0;
+    background-color: #bebebe;
+    display: block;
+    border-radius: 1000px;
+    margin-top: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#header .desktop .nav-links:hover::after {
+    width: 100%;
+}
+
 #header .desktop ul .login {
     margin-left: auto;
 }
